@@ -1,0 +1,14 @@
+output "vpc_id" {
+    description = "The Id of the VPC"
+    value = aws_vpc.main.Id
+}
+
+output "subnet_id" {
+    description = "The Id of the public subnet"
+    value = aws_vpc.public.Id
+}
+
+output "instance_public_ip {
+    description ="Public ip of the EC2 instance"
+    value = aws_instance.web.public.ip
+}
